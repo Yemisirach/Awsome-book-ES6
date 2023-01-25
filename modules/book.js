@@ -1,4 +1,3 @@
-/* eslint no-restricted-imports: ["error", { "paths": ["Book"] }] */
 import Book from './book.js';
 
 let allBooks;
