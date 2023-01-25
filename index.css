@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 body {
   padding: 1% 5%;
   height: 77vh;
@@ -8,11 +9,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 * input {
   margin: 0.2rem;
   padding: 0;
   border-radius: 10px;
 }
+
 .book-list {
   width: 60%;
   display: flex;
@@ -22,29 +25,38 @@ body {
   border-radius: 3px;
   margin: auto;
 }
+
 .form-control {
   height: 1.6rem;
   padding: 0.7rem;
   border-radius: 8px;
 }
+
 .add-Btn {
   width: 20%;
   margin-left: 80%;
   height: 50px;
   border-radius: 8px;
 }
+
 .contact-list {
-  margin-left: 4rem;
+  margin-left: 8rem;
   font-size: 1.2rem;
 }
+
 .date-now {
   display: flex;
   justify-content: flex-end;
   font-size: 1.5rem;
 }
+
 ul li a {
   list-style: none;
   text-decoration: none;
+}
+
+li {
+  cursor: pointer;
 }
 
 .book-list li {
@@ -53,10 +65,10 @@ ul li a {
   justify-content: space-between;
 }
 
-.add-book-form {
+.book-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
 }
 
 .books-container {
@@ -170,15 +182,6 @@ form div {
 
 .innerContainer:nth-child(odd) {
   background-color: rgb(231, 227, 227);
-}
-
-li {
-  cursor: pointer;
-}
-
-pre {
-  margin: 0% 0% 0% 10%;
-  font-size: 1rem;
 }
 
 footer {

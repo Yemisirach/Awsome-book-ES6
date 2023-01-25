@@ -29,6 +29,8 @@
     "type": "module"
   },
   "dependencies": {
-    "ajv-errors": "^1.0.1"
+    "ajv": "^8.10.0",
+    "ajv-errors": "^1.0.1",
+    "ajv-openapi": "2.0.0"
   }
 }

@@ -32,7 +32,7 @@
 
 <!-- DEPLOYMENT -->
 
-### This project goes live [here](yourpagedeployment.com) 🚀 .
+### This project goes live [here](https://yemisirach.github.io/Awsome-book-ES6/) 🚀 .
 
 <br>
 
@@ -43,7 +43,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome Books] <a name="about-project"></a>
+# 📖 [Awesome Books ES6] <a name="about-project"></a>
 
 **Awesome Books** is a pair programming project for saving book details like an online library.
 
@@ -58,7 +58,7 @@
 - **This project displays the input for Book details dynamically on the DOM**
 - **This project saves the Book details insode the Browser**
 
-<a href="https://yemisirach.github.io/Awsome_book/">Live Demo link</a>
+<a href="https://yemisirach.github.io/Awsome-book-ES6/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
