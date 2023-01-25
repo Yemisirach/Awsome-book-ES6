@@ -37,7 +37,7 @@ const domDisplay = () => {
       remove.remove(id);
     });
 
-    const newBook = document.createElement("p");
+    const newBook = document.createElement("li");
     const newTitle = document.createElement("p");
 
     newTitle.innerHTML = `"${bookTitle}" by ${bookAuthor}`;
@@ -58,10 +58,10 @@ list.addEventListener("click", () => {
 // const { DateTime } = luxon;
 // const Time = DateTime.now();
 // const time = document.querySelector("current-time");
-window.onload = () => {
-  refreshDOM();
-  time.innerHTML = `${Time.c.month} ${Time.c.day} ${Time.c.year}, ${Time.c.hour}:${Time.c.minute}:${Time.c.second}`;
-};
+// window.onload = () => {
+//   domDisplay();
+//   time.innerHTML = `${Time.c.month} ${Time.c.day} ${Time.c.year}, ${Time.c.hour}:${Time.c.minute}:${Time.c.second}`;
+// };
 // time.innerHTML = `${Time.month} ${Time.day} ${Time.year} ${Time.hour} ${Time.minute} ${Time.second}`;
 // Add form page
 addBook.addEventListener("click", (e) => {
@@ -93,6 +93,7 @@ addBook.addEventListener("click", (e) => {
   addBtn.innerText = "Add";
   addBtn.id = "btn";
   form.appendChild(addBtn);
+  allBooks = JSON.parse(localStorage.getItem("bookList"));
 
   mainContainer.appendChild(form);
 
