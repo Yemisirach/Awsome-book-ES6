@@ -1,5 +1,7 @@
+/* eslint no-restricted-imports: ["error", { "paths": ["Book"] }] */
+import Book from './book.js';
+
 let allBooks;
-let Book;
 export default class Add {
   add = (bookTitle, bookAuthor) => {
     if (!(bookTitle.length < 3 || bookAuthor.length < 3)) {

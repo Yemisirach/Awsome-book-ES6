@@ -1,11 +1,10 @@
 import { DateTime } from './modules/luxon.js';
 import Add from './modules/add.js';
 import Remove from './modules/remove.js';
-import Book from './modules/book.js';
 
 const add = new Add();
 const remove = new Remove();
-const book = new Book();
+
 // Add current time
 const now = DateTime.now();
 document.querySelector(
