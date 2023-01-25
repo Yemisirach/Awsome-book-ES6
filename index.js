@@ -1,7 +1,14 @@
+import { DateTime } from "./modules/luxon.js";
 import Add from "./modules/add.js";
 import Remove from "./modules/remove.js";
 const add = new Add();
 const remove = new Remove();
+// Add current time
+const now = DateTime.now();
+document.querySelector(
+  ".date-now"
+).innerHTML = `${now.day} ${now.month}, ${now.year} ${now.hour}:${now.minute}:${now.second}`;
+
 // eslint-disable-next-line no-undef
 const list = document.getElementById("list");
 const addBook = document.getElementById("add-book");
@@ -54,15 +61,6 @@ list.addEventListener("click", () => {
   domDisplay();
 });
 
-// Add current time
-// const { DateTime } = luxon;
-// const Time = DateTime.now();
-// const time = document.querySelector("current-time");
-// window.onload = () => {
-//   domDisplay();
-//   time.innerHTML = `${Time.c.month} ${Time.c.day} ${Time.c.year}, ${Time.c.hour}:${Time.c.minute}:${Time.c.second}`;
-// };
-// time.innerHTML = `${Time.month} ${Time.day} ${Time.year} ${Time.hour} ${Time.minute} ${Time.second}`;
 // Add form page
 addBook.addEventListener("click", (e) => {
   e.preventDefault();

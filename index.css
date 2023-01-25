@@ -37,6 +37,15 @@ body {
   margin-left: 4rem;
   font-size: 1.2rem;
 }
+.date-now {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+ul li a {
+  list-style: none;
+  text-decoration: none;
+}
 
 .book-list li {
   display: flex;
@@ -102,7 +111,7 @@ nav {
   background-color: rgb(248, 183, 63);
 }
 
-.nav-logo-frame {
+.nav-logo {
   text-decoration: none;
   color: black;
 }
