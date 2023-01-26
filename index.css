@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+body {
+  padding: 1% 5%;
+  height: 77vh;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 900;
+  background-image: url(./image/new.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+* input {
+  margin: 0.2rem;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.book-list {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(39, 37, 37);
+  border-radius: 3px;
+  margin: auto;
+  padding-left: 0;
+}
+
+.form-control {
+  height: 1.6rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+
+.add-Btn {
+  width: 20%;
+  margin-left: 80%;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.contact-list {
+  margin-left: 8rem;
+  font-size: 1.2rem;
+}
+
+.date-now {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+.book-list li {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.books-container {
+  border: 2px solid black;
+}
+
+.Books {
+  height: 10%;
+  padding: 0% 1.5%;
+  display: flex;
+}
+
+.Books p {
+  width: 90%;
+}
+
+.remove-book {
+  width: 5.2rem;
+  height: 2.1rem;
+  align-self: center;
+}
+
+#add-button {
+  width: 4rem;
+  align-self: flex-end;
+  padding: 3%;
+  font-size: 1rem;
+}
+
+button,
+.btn {
+  border: 2px solid rgb(36, 33, 33);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 2px;
+  font-size: 16px;
+  padding: 5px 12px;
+}
+
+.book-bg:nth-child(odd) {
+  background-color: rgb(218, 214, 214);
+}
+
+.add-book-form input {
+  padding: 3%;
+  border: 1px solid rgb(77, 77, 77);
+  font-size: 1rem;
+}
+
+main {
+  width: 55%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 3% 0% 2%;
+  font-size: 1.2rem;
+  background-color: rgb(248, 183, 63);
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 45px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 80px;
+  align-items: center;
+  height: 2px;
+  background-color: black;
+}
+
+.current-time {
+  display: flex;
+  justify-content: end;
+  padding: 0% 1% 0% 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+form div {
+  text-align: right;
+  font-weight: 100;
+}
+
+.bookContainer {
+  font-weight: 100;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 5px;
+}
+
+.innerContainer:nth-child(odd) {
+  background-color: rgb(231, 227, 227);
+}
+
+footer {
+  padding: 1%;
+  margin: 20px 0 5px 0;
+  background-color: rgb(248, 183, 63);
+}
+
+.hidden {
+  display: none;
+}
