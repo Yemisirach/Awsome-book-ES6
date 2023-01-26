@@ -24,6 +24,7 @@ body {
   border: 2px solid rgb(39, 37, 37);
   border-radius: 3px;
   margin: auto;
+  padding-left: 0;
 }
 
 .form-control {
@@ -98,7 +99,17 @@ li {
   font-size: 1rem;
 }
 
-.Books:nth-child(odd) {
+button,
+.btn {
+  border: 2px solid rgb(36, 33, 33);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 2px;
+  font-size: 16px;
+  padding: 5px 12px;
+}
+
+.book-bg:nth-child(odd) {
   background-color: rgb(218, 214, 214);
 }
 

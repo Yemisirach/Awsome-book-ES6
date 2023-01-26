@@ -4,14 +4,12 @@ import Remove from './modules/remove.js';
 
 const add = new Add();
 const remove = new Remove();
-
 // Add current time
 const now = DateTime.now();
 document.querySelector(
   '.date-now',
 ).innerHTML = `${now.day} ${now.month}, ${now.year} ${now.hour}:${now.minute}:${now.second}`;
 
-// eslint-disable-next-line no-undef
 const list = document.getElementById('list');
 const addBook = document.getElementById('add-book');
 const contact = document.getElementById('contact-page');
@@ -21,8 +19,8 @@ const heading = document.querySelector('h1');
 const mainContainer = document.querySelector('main');
 
 let allBooks = [];
-if (localStorage.getItem('bookList') === null) {
-  localStorage.setItem('bookList', []);
+if (localStorage.getItem('book-List') === null) {
+  localStorage.setItem('book-List', []);
 }
 if (localStorage.getItem('id') === null) {
   localStorage.setItem('id', JSON.stringify(0));
@@ -30,11 +28,10 @@ if (localStorage.getItem('id') === null) {
 
 // boik list
 const domDisplay = () => {
-  heading.innerHTML = 'All Awesome Books';
+  heading.innerText = 'All Awesome Books';
   booksContainer.innerHTML = '';
   mainContainer.innerHTML = '';
-  allBooks = JSON.parse(localStorage.getItem('bookList'));
-
+  allBooks = JSON.parse(localStorage.getItem('book-List'));
   allBooks.forEach((book) => {
     const bookTitle = book.name;
     const bookAuthor = book.author;
@@ -44,17 +41,17 @@ const domDisplay = () => {
     removeBtn.addEventListener('click', (e) => {
       const { id } = e.target.parentNode;
       remove.remove(id);
+      domDisplay();
     });
-
     const newBook = document.createElement('li');
+    newBook.classList = 'book-bg';
     const newTitle = document.createElement('p');
-
     newTitle.innerHTML = `"${bookTitle}" by ${bookAuthor}`;
     newBook.id = bookId;
     newBook.appendChild(newTitle);
     newBook.appendChild(removeBtn);
     booksContainer.appendChild(newBook);
-    booksContainer.id = 'book-Container';
+    booksContainer.id = 'book-container';
     mainContainer.appendChild(booksContainer);
   });
 };
@@ -93,7 +90,7 @@ addBook.addEventListener('click', (e) => {
   addBtn.innerText = 'Add';
   addBtn.id = 'btn';
   form.appendChild(addBtn);
-  allBooks = JSON.parse(localStorage.getItem('bookList'));
+  allBooks = JSON.parse(JSON.stringify(localStorage.getItem('book-List')));
 
   mainContainer.appendChild(form);
 

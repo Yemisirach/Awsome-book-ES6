@@ -51,12 +51,9 @@
 
 -Client
 
-- **This Project has a Readme.md file**
-- **This Project has a gitignore file**
-- **This projects follows all Microverse Linters**
-- **This project takes user inputs of Book title and Authors**
-- **This project displays the input for Book details dynamically on the DOM**
-- **This project saves the Book details insode the Browser**
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 <a href="https://yemisirach.github.io/Awsome-book-ES6/">Live Demo link</a>
 
@@ -141,6 +138,6 @@ We would like to thank everyone who inspired us to learn programming. Regards to
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./license) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
