@@ -19,11 +19,11 @@ const heading = document.querySelector('h1');
 const mainContainer = document.querySelector('main');
 
 let allBooks = [];
-if (localStorage.getItem('book-List') === null) {
-  localStorage.setItem('book-List', []);
+if (JSON.stringify(localStorage.getItem('book-List') === null)) {
+  JSON.stringify(localStorage.setItem('book-List', []));
 }
-if (localStorage.getItem('id') === null) {
-  localStorage.setItem('id', JSON.stringify(0));
+if (JSON.stringify(localStorage.getItem('id') === null)) {
+  JSON.stringify(localStorage.setItem('id', JSON.stringify(0)));
 }
 
 // boik list
